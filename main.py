@@ -1,5 +1,5 @@
-from display import clear_screen, menu
-from functions import suma, resta, multiplicacion, division, show_history
+from interface.display import clear_screen, menu
+from core.functions import suma, resta, multiplicacion, division, show_history
 
 
 print('\n CALCULADORA SIMPLE. \n')
