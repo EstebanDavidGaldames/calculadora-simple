@@ -2,7 +2,7 @@
 historial = []
 
 
-def suma():
+def sumar():
     number1 = float(input('Ingrese el primer sumando: '))
     number2 = float(input('Ingrese el segundo sumando: '))
     resultado = number1 + number2 #suma
@@ -10,7 +10,7 @@ def suma():
     return historial.append(f'{number1} + {number2} = {resultado}')
 
 
-def resta():
+def restar():
     number1 = float(input('Ingrese el minuendo: '))
     number2 = float(input('Ingrese el sustraendo: '))
     resultado = number1 - number2 #resto o diferencia
@@ -18,7 +18,7 @@ def resta():
     return historial.append(f'{number1} - {number2} = {resultado}')
 
 
-def multiplicacion():
+def multiplicar():
     number1 = float(input('Ingrese el primer factor: '))
     number2 = float(input('Ingrese el segundo factor: '))
     resultado = number1 * number2
@@ -26,7 +26,7 @@ def multiplicacion():
     return historial.append(f'{number1} x {number2} = {resultado}')
 
 
-def division():
+def dividir():
     number1 = float(input('Ingrese el dividendo: '))
     number2 = float(input('Ingrese el divisor: '))
     resultado = number1 / number2

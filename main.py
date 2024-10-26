@@ -1,5 +1,5 @@
 from interface.display import clear_screen, menu
-from core.functions import suma, resta, multiplicacion, division, show_history
+from core.functions import sumar, restar, multiplicar, dividir, show_history
 
 
 print('\n CALCULADORA SIMPLE. \n')
@@ -12,16 +12,16 @@ def main():
         match choosed:
             case 'A':
                 clear_screen()
-                suma()
+                sumar()
             case 'B':
                 clear_screen()
-                resta()
+                restar()
             case 'C':
                 clear_screen()
-                multiplicacion()
+                multiplicar()
             case 'D':
                 clear_screen()
-                division()
+                dividir()
             case 'E':
                 clear_screen()
                 show_history()
