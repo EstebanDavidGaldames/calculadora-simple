@@ -1,6 +1,5 @@
-from interface.display import clear_screen, menu
-from core.functions import sumar, restar, multiplicar, dividir, show_history
-
+from interface import * #from interface.display import clear_screen, menu
+from core import * #from core.functions import sumar, restar, multiplicar, dividir, show_history
 
 print('\n CALCULADORA SIMPLE. \n')
 
