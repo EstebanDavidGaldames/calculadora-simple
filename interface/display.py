@@ -15,4 +15,12 @@ def menu():
     print('C: MULTIPLICACIÓN')
     print('D: DIVISIÓN')
     print('E: MOSTRAR HISTORIAL')
-    print('F: SALIR')
+    print('F: SALIR\n')
+
+def get_option():
+    option = input('\n ¿Desea realizar otra operación? (S --> Sí / N -- > No): ').upper()
+    if option == 'S' or option == 'N':
+        return option
+    else:
+        print('\n Ingrese S para Sí o N para No.')
+        return get_option()

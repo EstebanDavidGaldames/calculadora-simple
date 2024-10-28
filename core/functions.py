@@ -110,8 +110,8 @@ def dividir():
 
 def show_history():
     if not historial:
-        print('No se realizaron cálculos.')
+        print('\n No se realizaron cálculos.')
     else:
-        print('\n Cálculos realizados: \n')
+        print('\n *** Cálculos realizados: ***\n')
         for element in historial:
             print(element)
