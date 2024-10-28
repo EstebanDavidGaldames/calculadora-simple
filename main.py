@@ -28,6 +28,10 @@ def main():
                 clear_screen()
                 print('Calculadora apagada. \n')
                 break
+            case _ :
+                clear_screen()
+                print('No ingresó una opción válida.\nIngrese una opción válida.')
+                continue
 
         option = input('\n ¿Desea realizar otra operación? ')
         if option == 'Y':
@@ -37,6 +41,9 @@ def main():
             clear_screen()
             print('Calculadora apagada. \n')
             break
+        else:
+            clear_screen()
+            print('No ingresó una opción válida.')
 
 
 if __name__ == '__main__':
