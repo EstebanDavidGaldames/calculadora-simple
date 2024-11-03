@@ -17,6 +17,7 @@ def menu():
     print('E: MOSTRAR HISTORIAL')
     print('F: SALIR\n')
 
+
 def get_option():
     option = input('\n ¿Desea realizar otra operación? (S --> Sí / N -- > No): ').upper()
     if option == 'S' or option == 'N':

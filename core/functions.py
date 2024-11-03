@@ -1,5 +1,5 @@
-
-historial = []
+# FUNCIONES PRINCIPALES - GETS Y CÁLCULOS
+from files_management import *
 
 
 def get_sumando1():
@@ -76,7 +76,8 @@ def sumar():
     number2 = get_sumando2() #float(input('Ingrese el segundo sumando: '))
     resultado = number1 + number2 #suma
     print(f'Su operación es: {number1} + {number2} = {resultado}')
-    return historial.append(f'{number1} + {number2} = {resultado}')
+    write_file(f'{number1} + {number2} = {resultado}')
+    #return historial.append(f'{number1} + {number2} = {resultado}')
 
 
 def restar():
@@ -84,7 +85,8 @@ def restar():
     number2 = get_sustraendo() #float(input('Ingrese el sustraendo: '))
     resultado = number1 - number2 #resto o diferencia
     print(f'Su operación es: {number1} - {number2} = {resultado}')
-    return historial.append(f'{number1} - {number2} = {resultado}')
+    write_file(f'{number1} - {number2} = {resultado}')
+    #return historial.append(f'{number1} - {number2} = {resultado}')
 
 
 def multiplicar():
@@ -92,7 +94,8 @@ def multiplicar():
     number2 = get_factor2() #float(input('Ingrese el segundo factor: '))
     resultado = number1 * number2
     print(f'Su operación es: {number1} x {number2} = {resultado}')
-    return historial.append(f'{number1} x {number2} = {resultado}')
+    write_file(f'{number1} x {number2} = {resultado}')
+    #return historial.append(f'{number1} x {number2} = {resultado}')
 
 
 def dividir():
@@ -105,13 +108,19 @@ def dividir():
     #    print('No se puede dividir por cero.')
     #    get_divisor()
     print(f'Su operación es: {number1} / {number2} = {resultado}')
-    return historial.append(f'{number1} / {number2} = {resultado}')
+    write_file(f'{number1} / {number2} = {resultado}')
+    #return historial.append(f'{number1} / {number2} = {resultado}')
 
 
 def show_history():
-    if not historial:
+    historial = (read_file())
+    if historial == ['']:
         print('\n No se realizaron cálculos.')
+        print(historial)
     else:
         print('\n *** Cálculos realizados: ***\n')
+        historial = (read_file())
+        print(historial)
+
         for element in historial:
             print(element)
