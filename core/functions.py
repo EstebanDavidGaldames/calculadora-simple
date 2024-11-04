@@ -114,23 +114,24 @@ def dividir():
 
 def show_history():
     
-    while True:
-        historial = (read_file())
-        comparador = ['']
+    #while True:
+    historial = (read_file())
+    comparador = ['']
         #print(historial) # PARA PRUEBA
         #print('historial creado') # PARA PRUEBA
 
-        if historial == comparador or historial == None:
-            print('\n No se realizaron cálculos.')
+    if historial == comparador or historial == None:
+        print('\n No se realizaron cálculos.')
             #print(historial) # PARA PRUEBA
-            break
-        else:
-            print('\n *** Cálculos realizados: ***\n')
-
+            #break # PARA WHILE
+        return
+    else:
+        print('\n *** Cálculos realizados: ***\n')
             #historial = (read_file()) # PARA PRUEBA
             #print(historial) # PARA PRUEBA
 
-            for element in historial:
-                print(element)
+        for element in historial:
+            print(element)
 
-            break
+            #break # PARA WHILE
+        return
