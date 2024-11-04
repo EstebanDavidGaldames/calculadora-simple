@@ -65,7 +65,7 @@ def get_divisor():
             print('No se puede dividir por cero.\nIngrese un número válido.')
             return get_divisor()
         else:
-            return divisor #float(input('Ingrese el divisor: '))
+            return divisor
     except:
         print('No ingresó un número válido.')
         return get_divisor()
@@ -113,14 +113,24 @@ def dividir():
 
 
 def show_history():
-    historial = (read_file())
-    if historial == ['']:
-        print('\n No se realizaron cálculos.')
-        print(historial)
-    else:
-        print('\n *** Cálculos realizados: ***\n')
+    
+    while True:
         historial = (read_file())
-        print(historial)
+        comparador = ['']
+        #print(historial) # PARA PRUEBA
+        #print('historial creado') # PARA PRUEBA
 
-        for element in historial:
-            print(element)
+        if historial == comparador or historial == None:
+            print('\n No se realizaron cálculos.')
+            print(historial)
+            break
+        else:
+            print('\n *** Cálculos realizados: ***\n')
+
+            #historial = (read_file()) # PARA PRUEBA
+            #print(historial) # PARA PRUEBA
+
+            for element in historial:
+                print(element)
+
+            break

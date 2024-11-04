@@ -26,6 +26,7 @@ def main():
                 show_history()
             case 'F':
                 clear_screen()
+                ask_delete()
                 print('\n *** Calculadora apagada. ***\n')
                 break
             case _ :
@@ -39,6 +40,7 @@ def main():
             continue
         elif option == 'N':
             clear_screen()
+            ask_delete()
             print('\n *** Calculadora apagada. ***\n')
             break
         #else:

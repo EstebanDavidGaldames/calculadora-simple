@@ -1,8 +1,11 @@
-FILE_NAME = 'calculos.txt'
+FILE_NAME = 'historial_de_calculos.txt'
 
 def write_file(calculo_realizado : str = '') -> None:
     with open(FILE_NAME, 'a') as file:
-        file.write(f'{calculo_realizado}\n')
+        if calculo_realizado == '':
+            file.write(f'{calculo_realizado}')
+        else:
+            file.write(f'{calculo_realizado}\n')
 
 
 def read_file() -> list[str]:
