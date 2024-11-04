@@ -122,7 +122,7 @@ def show_history():
 
         if historial == comparador or historial == None:
             print('\n No se realizaron cálculos.')
-            print(historial)
+            #print(historial) # PARA PRUEBA
             break
         else:
             print('\n *** Cálculos realizados: ***\n')

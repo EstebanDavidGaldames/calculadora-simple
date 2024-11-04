@@ -1,4 +1,4 @@
-FILE_NAME = 'historial_de_calculos.txt'
+from config.constants import FILE_NAME
 
 def write_file(calculo_realizado : str = '') -> None:
     with open(FILE_NAME, 'a') as file:

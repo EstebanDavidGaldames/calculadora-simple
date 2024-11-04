@@ -1,7 +1,12 @@
+# Entorno Virtual
 venv/*
+
+# Pycache  -->  Puedo usar: **/__pycache__/*
 __pycache__/*
 core/__pycache__/*
 interface/__pycache__/*
 files_management/__pycache__/*
+config/__pycache__/*
 
+# Archivos
 historial_de_calculos.txt
